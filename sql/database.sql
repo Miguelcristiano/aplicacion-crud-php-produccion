@@ -1,15 +1,20 @@
-CREATE TABLE empleados (
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  apellido VARCHAR(100) NOT NULL,
-  nombre VARCHAR(100) NOT NULL,
-  edad INT UNSIGNED NOT NULL,
-  puesto VARCHAR(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE actividad61MiGu (
+    invizimals_id INT AUTO_INCREMENT PRIMARY KEY, 
+    tipo VARCHAR(50),
+    nombre VARCHAR(50),
+    rareza VARCHAR(50),
+    descripcion TEXT,
+    elemento VARCHAR(50)
+);
 
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Coloma', 'Javier', 25, 'Contable');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Oviedo', 'Carmen', 34, 'Administrativo');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Vargas', 'Pascual', 19, 'Dependiente');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Donoso', 'Maria', 45, 'Gerente');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Celis', 'Manuel', 56, 'Dependiente');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Palencia', 'Jana', 31, 'Dependiente');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Zamanillo', 'Pedro', 63, 'Repartidor');
+INSERT INTO actividad61MiGu (tipo, nombre, rareza, descripcion, elemento) VALUES  
+('Felino', 'Tigershark', 'Raro', 'Mitad tigre, mitad tiburón.', 'Agua'),  
+('Mamífero', 'Xiong Mao', 'Común', 'Inspirado en un panda gigante.', 'Tierra'),  
+('Dragón', 'Firefang', 'Épico', 'Un dragón envuelto en llamas.', 'Fuego'),  
+('Bestia', 'Minotaur', 'Raro', 'Un poderoso minotauro guerrero.', 'Tierra'),  
+('Simio', 'Silverback', 'Legendario', 'Un gorila de sombras indomable.', 'Sombra'),  
+('Gélido', 'Icebringer', 'Épico', 'Criatura de hielo con gran poder.', 'Hielo'),  
+('Insecto', 'Stingwing', 'Común', 'Avispa veloz con aguijón venenoso.', 'Veneno'),  
+('Reptil', 'Razorfang', 'Raro', 'Lagarto con dientes afilados.', 'Tierra'),  
+('Ave', 'Thunderbeak', 'Épico', 'Un águila que controla rayos.', 'Eléctrico'),  
+('Acuático', 'Deepclaw', 'Legendario', 'Criatura marina con garras letales.', 'Agua');  
